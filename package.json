@@ -9,7 +9,9 @@
     "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "MIT",
@@ -39,6 +41,8 @@
     "postcss-loader": "^0.9.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
-    "whatwg-fetch": "^1.0.0"
-  }
+    "whatwg-fetch": "^1.0.0",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
